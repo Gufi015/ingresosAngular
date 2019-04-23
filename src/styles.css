@@ -292,6 +292,19 @@ h2{
   font-weight: 900;
 }
 
+.img-icon{
+  width: 44px;
+  height: 44px;
+  float: left;
+  transition: transform 0.3s;
+  display: inline;
+}
 
-
+.img-icon-1 {
+  width: 24px;
+  height: 24px;
+  float: left;
+  transition: transform 0.3s;
+  display: inline;
+}
 
