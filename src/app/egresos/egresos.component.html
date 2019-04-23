@@ -4,8 +4,8 @@
   <div *ngFor="let egreso of egresos" class="elemento limpiarEstilos">
     <div class="elemento_descripcion">{{egreso.descripcion}}</div>
     <div class="right limpiarEstilos">
-      <div class="elemento_valor">-{{egreso.valor}}</div>
-      <div class="elemento_porcentaje">{{calcularPorcentaje(egreso)}}%</div>
+      <div class="elemento_valor">-{{egreso.valor | currency:'$'}}</div>
+      <div class="elemento_porcentaje">{{calcularPorcentaje(egreso) | percent}}</div>
       <div class="elemento_eliminar">
         <button class="elemento_eliminar--btn">
           <!-- <img class="img-icon-1" src="../assets/icon/cancelR.png" alt="auto"> -->
