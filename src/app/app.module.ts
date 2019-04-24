@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { EgresosComponent } from './egresos/egresos.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { IngresoServicio } from './ingresos/ingresos.service';
 import { EgresoServicio } from './egresos/egresos.service';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { EgresoServicio } from './egresos/egresos.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     IngresoServicio,
